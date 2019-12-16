@@ -1,0 +1,16 @@
+import pet from './modules/pet'
+
+const getters = {
+    sidebar: state => state.app.sidebar,
+    device: state => state.app.device,
+    token: state => state.user.token,
+    avatar: state => state.user.avatar,
+    name: state => state.user.name,
+    roles: state => state.user.roles,
+    userinfo: state => state.user.userinfo,
+    dashboardname: state => state.dashboard.name,
+    dashboardtime: state => state.dashboard.currentDate,
+    dashboarddata: state => state.dashboard.mydata,
+    petdata: state => state.pet.petdata,
+}
+export default getters
